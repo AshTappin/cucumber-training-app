@@ -59,6 +59,13 @@ public class TestSteps extends FluentAdapter {
     loginPage.setPassword(password);
   }
 
+  @Given("^I am FelixTheCat$")
+  public void loginAsFelixTheCat() {
+    i_enter_username("FelixTheCat");
+    i_enter_password("ILoveSleep");
+    i_login();
+  }
+
   @When("^I login$")
   public void i_login() {
     loginPage.login();

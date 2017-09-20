@@ -12,7 +12,7 @@
         <form class="form-login" method="post">
           <h4>Please login...</h4>
           <input type="text" name="name" class="form-control input-sm chat-input" placeholder="username" /> </br> <input
-            type="text" name="password" class="form-control input-sm chat-input" placeholder="password" /> </br>
+            type="password" name="password" class="form-control input-sm chat-input" placeholder="password" /> </br>
              <input id="loginButton" value="Login" type="submit" class="btn btn-primary"/> 
              
             
