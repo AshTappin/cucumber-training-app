@@ -8,6 +8,7 @@ public class LoginPage extends FluentPage {
   private FluentWebElement name;
   private FluentWebElement password;
   private FluentWebElement loginButton;
+  private FluentWebElement error;
 
   @Override
   public String getUrl() {
@@ -24,6 +25,10 @@ public class LoginPage extends FluentPage {
 
   public void login() {
     loginButton.click();
+  }
+
+  public String getErrorMessage() {
+    return error.getText();
   }
 
 }

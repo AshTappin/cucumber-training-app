@@ -20,7 +20,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class LoginSteps extends FluentAdapter {
+public class TestSteps extends FluentAdapter {
 
   private WebDriver webDriver;
 
@@ -67,6 +67,11 @@ public class LoginSteps extends FluentAdapter {
   @Then("^the home page should say \"([^\"]*)\"$")
   public void the_home_page_should_say(final String expectedMessage) {
     assertEquals(expectedMessage, homePage.getWelcomeText());
+  }
+
+  @Then("^I see an error \"(.*)\"$")
+  public void checkErrorMessage(final String expectedErrorMessage) {
+    assertEquals(expectedErrorMessage, loginPage.getErrorMessage());
   }
 
   @After
