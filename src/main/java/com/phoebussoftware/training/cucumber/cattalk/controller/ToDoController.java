@@ -17,6 +17,15 @@ public class ToDoController {
   private ToDoService service;
 
 
+  @RequestMapping(value = "/list-todos", method = RequestMethod.POST)
+  public String createToDos(final ModelMap model) {
+
+    String name = (String) model.get("name");
+    List<String> todos = service.retrieveToDosForUser(name);
+    model.put("todos", todos);
+    return "list-todos";
+  }
+
   @RequestMapping(value = "/list-todos", method = RequestMethod.GET)
   public String listToDos(final ModelMap model) {
 

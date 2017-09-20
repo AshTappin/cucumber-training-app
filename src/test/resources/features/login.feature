@@ -5,7 +5,7 @@ Scenario: Valid login
 Given I enter username "FelixTheCat"
   And I enter password "ILoveSleep"  
 When I login
-Then the home page should say "Meow FelixTheCat!"
+Then the home page should say "Hello FelixTheCat!"
 ## Can you refactor the given steps to use a datatable? 
 
 Scenario: Invalid login

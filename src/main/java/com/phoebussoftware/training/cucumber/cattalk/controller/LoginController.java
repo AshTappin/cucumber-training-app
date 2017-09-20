@@ -21,7 +21,7 @@ public class LoginController {
   }
 
   @RequestMapping(value = "/login", method = RequestMethod.POST)
-  public String showWelcomePage(final ModelMap model, @RequestParam final String name, @RequestParam final String password) {
+  public String login(final ModelMap model, @RequestParam final String name, @RequestParam final String password) {
 
     boolean isValidUser = service.validateUser(name, password);
 

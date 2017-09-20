@@ -11,4 +11,9 @@ public class HomePage extends FluentPage {
     return welcomeText.getText();
   }
 
+  @Override
+  public String getUrl() {
+    return "/welcome";
+  }
+
 }
