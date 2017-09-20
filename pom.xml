@@ -8,8 +8,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>cat-talk</name>
-	<description>Demo project for Spring Boot</description>
+	<name>cucumber-training-app</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

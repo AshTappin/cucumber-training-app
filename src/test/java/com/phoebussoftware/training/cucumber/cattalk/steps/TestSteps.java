@@ -5,12 +5,14 @@ import static org.junit.Assert.assertEquals;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 
 import org.fluentlenium.core.FluentAdapter;
 import org.fluentlenium.core.annotation.Page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.phoebussoftware.training.cucumber.cattalk.model.ToDoModel;
 import com.phoebussoftware.training.cucumber.cattalk.pages.HomePage;
 import com.phoebussoftware.training.cucumber.cattalk.pages.LoginPage;
 
@@ -79,6 +81,12 @@ public class TestSteps extends FluentAdapter {
   @Then("^I see an error \"(.*)\"$")
   public void checkErrorMessage(final String expectedErrorMessage) {
     assertEquals(expectedErrorMessage, loginPage.getErrorMessage());
+  }
+
+  @Then("^I should see:$")
+  public void checkTodos(final List<ToDoModel> expectedToDos) {
+
+
   }
 
   @After
