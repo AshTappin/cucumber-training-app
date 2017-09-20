@@ -8,4 +8,4 @@ Feature: Todos
       | What to do    | dateCreated | status      |
       | Annoy the dog | 2017-10-02  | NOT_DONE  |
       
-# Come up with some more scenarios! Be as creative as you can
+# Come up with some more scenarios! Be as creative as you can. The web app should allow users to crete todos...

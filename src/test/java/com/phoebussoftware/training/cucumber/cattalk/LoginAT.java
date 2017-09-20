@@ -7,6 +7,6 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(strict = true, features = {"classpath:features/login.feature"})
-public class LoginIT {
+public class LoginAT {
 
 }
