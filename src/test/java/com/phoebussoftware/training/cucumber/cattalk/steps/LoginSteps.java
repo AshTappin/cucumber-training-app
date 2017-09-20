@@ -1,6 +1,7 @@
 package com.phoebussoftware.training.cucumber.cattalk.steps;
 
 import static java.nio.file.Files.exists;
+import static org.junit.Assert.assertEquals;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -10,15 +11,14 @@ import org.fluentlenium.core.annotation.Page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.phoebussoftware.training.cucumber.cattalk.pages.HomePage;
 import com.phoebussoftware.training.cucumber.cattalk.pages.LoginPage;
-import com.phoebussoftware.training.cucumber.cattalk.pages.MeowPage;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
 
 public class LoginSteps extends FluentAdapter {
 
@@ -28,7 +28,7 @@ public class LoginSteps extends FluentAdapter {
   private LoginPage loginPage;
 
   @Page
-  private MeowPage meowPage;
+  private HomePage homePage;
 
   @Before
   public void setup() {
@@ -52,7 +52,6 @@ public class LoginSteps extends FluentAdapter {
   @Given("^I enter username \"([^\"]*)\"$")
   public void i_enter_username(final String userName) {
     loginPage.setUsername(userName);
-
   }
 
   @Given("^I enter password \"([^\"]*)\"$")
@@ -66,9 +65,8 @@ public class LoginSteps extends FluentAdapter {
   }
 
   @Then("^the home page should say \"([^\"]*)\"$")
-  public void the_home_page_should_say(final String arg1) {
-
-
+  public void the_home_page_should_say(final String expectedMessage) {
+    assertEquals(expectedMessage, homePage.getWelcomeText());
   }
 
   @After

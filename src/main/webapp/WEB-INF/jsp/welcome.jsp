@@ -1,11 +1,13 @@
 <html>
 
 <head>
-<title>First Web Application</title>
+<title>Some cutting edge web application</title>
 </head>
 
 <body>
-    Welcome ${name}!! to Jurassic Park!
+  <div>
+    <h1 id="welcomeText">Meow ${name}!</h1>
+  </div>
 </body>
 
 </html>
