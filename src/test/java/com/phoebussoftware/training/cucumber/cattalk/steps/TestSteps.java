@@ -56,7 +56,7 @@ public class TestSteps extends FluentAdapter {
     loginPage.setUsername(userName);
   }
 
-  @Given("^I enter password \"([^\"]*)\"$")
+  @Given("^I enter password")
   public void i_enter_password(final String password) {
     loginPage.setPassword(password);
   }
