@@ -1,6 +1,6 @@
 ### What is this repository for? ###
 
-A simple web app which intends to allow users to create and view ToDos. It is "incomplete" and contains some partially completed cucumber tests, so this project can used to train up in cucumber.
+A simple web app which intends to allow users to create and view ToDos. It is "incomplete" and contains some partially completed cucumber tests. Therefore it can be a good "play project" to practice writing up and designing an app using cucumber.
 
 ### How do I get set up? ###
 
