@@ -119,30 +119,30 @@
 					</jvmArguments>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>unpack-firefox</id>
-						<phase>compile</phase>
-						<goals>
-							<goal>unpack</goal>
-						</goals>
-						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>org.mozilla.firefox</groupId>
-									<artifactId>firefox-portable-esr</artifactId>
-									<version>${firefox.version}</version>
-									<type>zip</type>
-									<outputDirectory>${project.build.directory}/firefox</outputDirectory>
-								</artifactItem>
-							</artifactItems>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+			<!--<plugin>-->
+				<!--<groupId>org.apache.maven.plugins</groupId>-->
+				<!--<artifactId>maven-dependency-plugin</artifactId>-->
+				<!--<executions>-->
+					<!--<execution>-->
+						<!--<id>unpack-firefox</id>-->
+						<!--<phase>compile</phase>-->
+						<!--<goals>-->
+							<!--<goal>unpack</goal>-->
+						<!--</goals>-->
+						<!--<configuration>-->
+							<!--<artifactItems>-->
+								<!--<artifactItem>-->
+									<!--<groupId>org.mozilla.firefox</groupId>-->
+									<!--<artifactId>firefox-portable-esr</artifactId>-->
+									<!--<version>${firefox.version}</version>-->
+									<!--<type>zip</type>-->
+									<!--<outputDirectory>${project.build.directory}/firefox</outputDirectory>-->
+								<!--</artifactItem>-->
+							<!--</artifactItems>-->
+						<!--</configuration>-->
+					<!--</execution>-->
+				<!--</executions>-->
+			<!--</plugin>-->
 		</plugins>
 	</build>
 
